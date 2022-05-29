@@ -22,6 +22,9 @@ local start_plugins = {
   { "neovim/nvim-lspconfig" },
   { "williamboman/nvim-lsp-installer" },
 
+  -- Telescope
+  { "nvim-telescope/telescope.nvim" },
+
   -- Personal plugins
   -- {
   --   "SmiteshP/nvim-gps",

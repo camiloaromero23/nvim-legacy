@@ -26,7 +26,7 @@ local keymaps = {
     ["<C-k>"] = "<C-w>k",
     ["<C-l>"] = "<C-w>l",
     ["<leader>e"] = ":Lex 30<CR>",
-    ["<leader>q"] = ":q<cr>",
+    ["<leader>q"] = ":q<CR>",
     ["<leader>w"] = ":w<CR>",
     -- Resize with arrows
     ["<A-Up>"] = ":resize -2<CR>",
@@ -43,6 +43,10 @@ local keymaps = {
     ["N"] = "Nzzzv",
     ["n"] = "nzzzv",
     ["J"] = "mzJ`z",
+    -- Telescope
+    ["<leader>f"] = ":Telescope find_files<CR>",
+    ["<leader>sf"] = ":Telescope find_files<CR>",
+    ["<leader>st"] = ":Telescope live_grep<CR>",
   },
   -- Insert --
   i = {
