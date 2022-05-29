@@ -10,6 +10,7 @@ local function isempty(s)
 end
 
 M.filename = function()
+  ---@diagnostic disable-next-line: missing-parameter
   local filename = vim.fn.expand("%"):match "([^/]+)$"
 
   local extension = ""

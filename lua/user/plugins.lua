@@ -25,22 +25,36 @@ local start_plugins = {
   -- Telescope
   { "nvim-telescope/telescope.nvim" },
 
+  -- Treesitter
+  {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  },
+  {
+    "windwp/nvim-ts-autotag",
+    event = "InsertEnter",
+  },
+  {
+    "p00f/nvim-ts-rainbow",
+  },
+
+  -- Web Dev icons
+  {
+    "kyazdani42/nvim-web-devicons",
+  },
+
   -- Personal plugins
-  -- {
-  --   "SmiteshP/nvim-gps",
-  --   config = function()
-  --     require("user.gps").config()
-  --   end,
-  -- },
+  {
+    "SmiteshP/nvim-gps",
+    config = function()
+      require("user.gps").config()
+    end,
+  },
   {
     "norcalli/nvim-colorizer.lua",
     config = function()
       require("user.nvim_colorizer").config()
     end,
-  },
-  {
-    "windwp/nvim-ts-autotag",
-    event = "InsertEnter",
   },
   {
     "fatih/vim-go",
@@ -108,12 +122,6 @@ local start_plugins = {
       vim.g.copilot_node_command = "/usr/local/n/versions/node/16.14.2/bin/node"
     end,
   },
-  -- {
-  --   "p00f/nvim-ts-rainbow",
-  --   config = function()
-  --     require("user.ts-rainbow").config()
-  --   end,
-  -- },
   {
     "marko-cerovac/material.nvim",
   },
