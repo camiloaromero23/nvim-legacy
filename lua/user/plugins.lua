@@ -43,6 +43,21 @@ local start_plugins = {
     "kyazdani42/nvim-web-devicons",
   },
 
+  -- Autopairs
+  {
+    "windwp/nvim-autopairs",
+  },
+
+  -- Comment
+  { "numToStr/Comment.nvim" }, -- Easily comment stuff
+  { "JoosepAlviste/nvim-ts-context-commentstring" },
+
+  -- Git Signs
+  { "lewis6991/gitsigns.nvim" },
+
+  -- NvimTree
+  { 'kyazdani42/nvim-tree.lua' },
+
   -- Personal plugins
   {
     "SmiteshP/nvim-gps",

@@ -16,6 +16,16 @@ configs.setup {
     enable = true,
     disable = { "" },
   },
+  autopairs = {
+    enable = true,
+    disable = { "" },
+  },
+  context_commentstring = {
+    enable = true,
+    -- enable_autocmd = true,
+    enable_autocmd = false,
+    disable = { "" },
+  },
   rainbow = {
     enable = true,
     extended_mode = false, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
@@ -25,11 +35,6 @@ configs.setup {
       "Orchid",
       "LightSkyBlue",
     }, -- table of hex strings
-    -- termcolors = {
-    --   "rainbowcol1",
-    --   "rainbowcol2",
-    --   "rainbowcol3",
-    -- }, -- table of colour name strings
   },
 
   indent = { enable = true, disable = { "yaml" } },

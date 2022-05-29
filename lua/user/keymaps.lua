@@ -25,7 +25,7 @@ local keymaps = {
     ["<C-j>"] = "<C-w>j",
     ["<C-k>"] = "<C-w>k",
     ["<C-l>"] = "<C-w>l",
-    ["<leader>e"] = ":Lex 30<CR>",
+    ["<leader>e"] = ":NvimTreeToggle<CR>",
     ["<leader>q"] = ":q<CR>",
     ["<leader>w"] = ":w<CR>",
     -- Resize with arrows
