@@ -6,15 +6,21 @@ local start_plugins = {
   { "nvim-lua/plenary.nvim" }, -- Useful lua functions used ny lots of plugins
 
   -- Completion plugins
+  { "folke/lua-dev.nvim" }, -- init.lua dev plugin
   { "hrsh7th/nvim-cmp" }, -- The completion plugin
   { "hrsh7th/cmp-buffer" }, -- buffer completions
   { "hrsh7th/cmp-path" }, -- path completions
   { "hrsh7th/cmp-cmdline" }, -- cmdline completions
   { "saadparwaiz1/cmp_luasnip" }, -- snippet completions
+  { "hrsh7th/cmp-nvim-lsp" }, -- lsp completions
 
   -- Snippets
-  {"L3MON4D3/LuaSnip"},
-  {"rafamadriz/friendly-snippets"},
+  { "L3MON4D3/LuaSnip" },
+  { "rafamadriz/friendly-snippets" },
+
+  -- LSP
+  { "neovim/nvim-lspconfig" },
+  { "williamboman/nvim-lsp-installer" },
 
   -- Personal plugins
   -- {
@@ -117,6 +123,7 @@ local fn = vim.fn
 
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
+---@diagnostic disable-next-line: missing-parameter
 if fn.empty(fn.glob(install_path)) > 0 then
   PACKER_BOOTSTRAP = fn.system {
     "git",
