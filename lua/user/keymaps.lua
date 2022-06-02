@@ -45,6 +45,7 @@ local keymaps = {
     ["J"] = "mzJ`z",
     -- Telescope
     ["<leader>f"] = ":Telescope find_files<CR>",
+    ["<leader>lf"] = ":Format<CR>",
     ["<leader>sf"] = ":Telescope find_files<CR>",
     ["<leader>st"] = ":Telescope live_grep<CR>",
   },
