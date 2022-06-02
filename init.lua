@@ -5,6 +5,7 @@ require "user.plugins"
 require "user.cmp"
 require("user.material").config()
 require "user.lsp"
+require "user.lsp.null-ls"
 require "user.telescope"
 require "user.treesitter"
 require "user.autopairs"

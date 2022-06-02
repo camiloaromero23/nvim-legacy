@@ -59,8 +59,11 @@ local start_plugins = {
   { 'kyazdani42/nvim-tree.lua' },
 
   -- Bufferline
-  { "akinsho/bufferline.nvim"},
-  { "moll/vim-bbye"},
+  { "akinsho/bufferline.nvim" },
+  { "moll/vim-bbye" },
+
+  -- Null LS
+  { "jose-elias-alvarez/null-ls.nvim" }, -- for formatters and linters
 
   -- Personal plugins
   {
