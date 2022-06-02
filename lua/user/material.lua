@@ -25,6 +25,10 @@ M.config = function()
       strings = false,
     },
     custom_colors = { accent = "#ADD8E6" },
+    disable = {
+      colored_cursor = true,
+      eob_lines = true,
+    },
     async_loading = false,
   }
   vim.cmd[[ colorscheme material ]]
