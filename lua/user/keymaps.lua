@@ -56,15 +56,16 @@ local keymaps = {
     ["kj"] = "<ESC>",
     [","] = ",<c-g>u",
     ["."] = ".<c-g>u",
+    -- Move current line / block with Alt-j/k ala vscode.
+    ["<A-j>"] = "<Esc>:m .+1<CR>==gi",
+    -- Move current line / block with Alt-j/k ala vscode.
+    ["<A-k>"] = "<Esc>:m .-2<CR>==gi",
   },
   -- Visual --
   v = {
     -- Stay in indent mode
     ["<"] = "<gv",
     [">"] = ">gv",
-    -- Move text up and down
-    ["<A-j>"] = ":m .+1<CR>==",
-    ["<A-k>"] = ":m .-2<CR>==",
     ["p"] = '"_dP',
   },
   -- Visual Block --
