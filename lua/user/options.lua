@@ -29,7 +29,7 @@ local options = {
   termguicolors = true, -- set term gui colors (most terminals support this)
   timeoutlen = 250, -- time to wait for a mapped sequence to complete (in milliseconds)
   title = true, -- set the title of window to the value of the titlestring
-  titlestring = "%<%F%=%l/%L - NVIM", -- what the title of the window will be set to
+  -- titlestring = "%<%F%=%l/%L - NVIM", -- what the title of the window will be set to
   undodir = vim.fn.stdpath "cache" .. "/undo",
   undofile = true, -- enable persistent undo
   updatetime = 300, -- faster completion
