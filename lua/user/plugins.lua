@@ -58,6 +58,10 @@ local start_plugins = {
   -- NvimTree
   { 'kyazdani42/nvim-tree.lua' },
 
+  -- Bufferline
+  { "akinsho/bufferline.nvim"},
+  { "moll/vim-bbye"},
+
   -- Personal plugins
   {
     "SmiteshP/nvim-gps",
