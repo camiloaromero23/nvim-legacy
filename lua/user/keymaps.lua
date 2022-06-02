@@ -28,6 +28,7 @@ local keymaps = {
     ["<leader>e"] = ":NvimTreeToggle<CR>",
     ["<leader>q"] = ":q<CR>",
     ["<leader>w"] = ":w<CR>",
+    ["<leader>c"] = ":bd!<CR>",
     -- Resize with arrows
     ["<A-Up>"] = ":resize -2<CR>",
     ["<A-Down>"] = ":resize +2<CR>",
